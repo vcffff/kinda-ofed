@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
 </head>
-<body>
+<body style="background-color:brown;">
     <form>
     <fieldset>
         <legend>Contacts:</legend>
-        <label for="hello">name:</label>
-        <input type="text" id="hello">
+        <style>
+            .input {
+  margin: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  max-width: 190px;
+  padding: 10px 20px;
+  font-size: 40pxpx;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #fff;
+}
+        </style>
+<input placeholder="Username" class="input" name="text" type="text">
        <input type="submit" value="Отправить">
     </form>
 </fieldset>
 <form>
     <fieldset>
-        <legend>email:</legend>
-        <label for="hello">email:</label>
-        <input type="email" id="hello">
+        <input placeholder="Email" class="input" name="Email" type="email">
        <input type="submit" value="Отправить">
     </fieldset>
 </form>
@@ -28,10 +39,11 @@
         <legend>
 type what u want
         </legend>
-    <textarea >write something</textarea>
-    <input type="submit" value="SEND">
+    <textarea  placeholder="write smth" class="input"></textarea>
+    <input type="submit" value="Отправить">
     </fieldset>
     
     </form>
+    <a href="./index.html" style="text-decoration: none; font-size: 30px; color: blue;">Back to home</a>
 </body>
 </html>
